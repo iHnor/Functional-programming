@@ -29,7 +29,7 @@ const sumOfPerimeter = (firstPr, secondPr) => firstPr + secondPr;
 const maxSquareBlackSquares = flow(
     filter(and(isBlack, isSquare)),
     map(squareOfFigures),
-    reduce(compSquare, -1)
+    reduce(compSquare, -Infinity)
 )
 console.log(maxSquareBlackSquares(shapes))
 
